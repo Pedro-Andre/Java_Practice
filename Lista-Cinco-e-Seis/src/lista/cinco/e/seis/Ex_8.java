@@ -12,19 +12,12 @@ public class Ex_8 {
         int maior = 0, menor = 210, num;
         int vet[][] = new int[3][3];
 
-        System.out.println("\t\t\t MATRIZ 3x3");
-
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                vet[i][j] = rand.nextInt(1000);
-            }
-        }
-
-        System.out.print("\tMATRIZ");
+        System.out.println("MATRIZ 3x3");
 
         for (int i = 0; i < 3; i++) {
             System.out.printf("\n| ");
             for (int j = 0; j < 3; j++) {
+                vet[i][j] = rand.nextInt(1000);
                 System.out.printf("%d ", vet[i][j]);
             }
             System.out.printf("|");

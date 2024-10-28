@@ -12,19 +12,12 @@ public class Ex_9 {
         int maior = 0, menor = 210, pares = 0, impares = 0;
         int vet[][] = new int[5][5];
 
-        System.out.println("\t\t\t MATRIZ 5x5");
-
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                vet[i][j] = rand.nextInt(50);
-            }
-        }
-
-        System.out.print("\tMATRIZ");
+        System.out.println("MATRIZ 5x5");
 
         for (int i = 0; i < 5; i++) {
             System.out.printf("\n| ");
             for (int j = 0; j < 5; j++) {
+                vet[i][j] = rand.nextInt(50);
                 System.out.printf("%d ", vet[i][j]);
                 
                 if (vet[i][j] > maior) maior = vet[i][j];
@@ -33,8 +26,8 @@ public class Ex_9 {
                 if (vet[i][j] % 2 != 0) impares++;
             }
             System.out.printf("|");
-        }        
-                
+        }
+
         System.out.printf("\n\nMaior numero: %d", maior);
         System.out.printf("\nMenor numero: %d", menor);
         System.out.printf("\nQtd. Pares: %d", pares);

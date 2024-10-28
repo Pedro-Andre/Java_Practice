@@ -10,24 +10,17 @@ public class Ex_5 {
         int soma;
         int vet[][] = new int[4][4];
 
-        System.out.println("\t\t\t MATRIZ 4x4");
-
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                vet[i][j] = rand.nextInt(50);
-            }
-        }
-
-        System.out.print("\tMATRIZ");
+        System.out.println(" MATRIZ 4x4 ");
 
         for (int i = 0; i < 4; i++) {
             System.out.printf("\n| ");
             for (int j = 0; j < 4; j++) {
-                System.out.printf("%d ", vet[i][j]);
+                vet[i][j] = rand.nextInt(50);
+                    System.out.printf("%d ", vet[i][j]);
             }
             System.out.printf("|");
         }
-        
+
         System.out.println();
         System.out.print("\nSomente os Valores Impares: ");
         

@@ -9,20 +9,18 @@ public class Ex_2 {
 
         int vet[][] = new int[2][2];
 
-        System.out.println("\t\t\t MATRIZ 2x2");
+        System.out.println("MATRIZ 2x2");
 
   
         for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 2; j++) vet[i][j] = rand.nextInt(20);
-        }
-
-        for (int i = 0; i < 2; i++) {
             System.out.printf("\n| ");
             for (int j = 0; j < 2; j++) {
+                vet[i][j] = rand.nextInt(20);
                 System.out.printf("%d ", vet[i][j]);
             }
             System.out.printf("|");
         }
+
             System.out.println();
 
     }

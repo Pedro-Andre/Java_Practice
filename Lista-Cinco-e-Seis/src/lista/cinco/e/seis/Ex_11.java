@@ -6,37 +6,35 @@ public class Ex_11 {
     public static void main(String[] args) {
         Random random = new Random();
         
-        int[][] mat = new int[4][4];
+        int[][] vet = new int[4][4];
         int soma, total;
 
-        System.out.println("\t\t\t QUADRADO MAGICO");
+        System.out.println("QUADRADO MAGICO");
 
         
         for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) mat[i][j] = random.nextInt(10) + 1;
-        }
-
-        for (int i = 0; i < 4; i++) {
             System.out.print("\n| ");
-            for (int j = 0; j < 4; j++) System.out.print(mat[i][j] + " ");
+            for (int j = 0; j < 4; j++){
+                vet[i][j] = random.nextInt(10) + 1;
+            }
             System.out.print("|");
         }
 
         soma = 0;
-        for (int i = 0; i < 4; i++) soma += mat[i][i];
+        for (int i = 0; i < 4; i++) soma += vet[i][i];
         
         System.out.printf("\n\nSoma Diagonal principal: %d", soma);
 
         total = soma;
         soma = 0;
 
-        for (int i = 0; i < 4; i++) soma += mat[i][4 - 1 - i];
+        for (int i = 0; i < 4; i++) soma += vet[i][4 - 1 - i];
         
         System.out.printf("\nSoma Diagonal secundaria: %d\n\n",soma);
 
         for (int i = 0; i < 4; i++) {
             soma = 0;
-            for (int j = 0; j < 4; j++) soma += mat[i][j];
+            for (int j = 0; j < 4; j++) soma += vet[i][j];
             System.out.printf("Soma da Linha %d: %d\n",i+1,soma);
         }
 
@@ -44,7 +42,7 @@ public class Ex_11 {
 
         for (int j = 0; j < 4; j++) {
             soma = 0;
-            for (int i = 0; i < 4; i++) soma += mat[i][j];
+            for (int i = 0; i < 4; i++) soma += vet[i][j];
             System.out.printf("Soma da Coluna %d: %d\n", j+1,soma);
         }
 

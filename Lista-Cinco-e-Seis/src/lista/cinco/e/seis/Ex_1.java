@@ -8,7 +8,7 @@ public class Ex_1 {
      int i;
 	int vet[] = new int[10];
 	
-	System.out.println("\t\t\t VETOR ");
+	System.out.println("VETOR");
 	
 	for (i = 0; i < 10; i++) {
 		vet[i] = rand.nextInt(10);

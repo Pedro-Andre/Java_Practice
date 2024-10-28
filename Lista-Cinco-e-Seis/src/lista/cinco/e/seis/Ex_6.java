@@ -10,24 +10,17 @@ public class Ex_6 {
         int mult;
         int vet[][] = new int[3][3];
 
-        System.out.println("\t\t\t MATRIZ 3x3");
-
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                vet[i][j] = rand.nextInt(15);
-            }
-        }
-
-        System.out.print("\tMATRIZ");
+        System.out.println("MATRIZ 3x3");
 
         for (int i = 0; i < 3; i++) {
             System.out.printf("\n| ");
             for (int j = 0; j < 3; j++) {
+                vet[i][j] = rand.nextInt(15);
                 System.out.printf("%d ", vet[i][j]);
             }
             System.out.printf("|");
         }
-        
+
         System.out.println();
         System.out.print("\nDiagonal Principal: ");
         System.out.printf("| %d, %d, %d |\n", vet[0][0], vet[1][1],vet[2][2]);
